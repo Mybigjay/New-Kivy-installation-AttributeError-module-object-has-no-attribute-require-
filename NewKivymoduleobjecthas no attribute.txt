@@ -1,0 +1,26 @@
+If you have anaconda on my system,do the followings
+1. Check conda location by opening the command prompt,  type   conda info --envs, mine is bibs  C:\ProgramData\Anaconda3\envs\bibs>
+2.  On your desktop search for the file, inn my own case i searched for bibs
+3.Inside the file, create a file name it  venv
+4 Copy the location of the venv folder, mine is 
+C:\Users\Blessing\PycharmProjects\pythonProject\bibs\venv
+5. Open cmd, type cd \Users\Blessing\PycharmProjects\pythonProject\bibs\venv
+6.Install the followings one after the other
+ pip install virtualenv
+python -m pip install --upgrade pip wheel setuptools
+python -m pip install docutils pygments pypiwin32 kivy.deps.sdl2  
+.deps.glew
+python -m pip install kivy.deps.gstreamer
+python -m pip install kivy.deps.angle
+python -m pip install kivy
+python -m pip install kivy_examples
+python -m pip install Pillow
+python -m pip install cython
+7. Right click the file named venv, open it with pycharm,  Inside venv, create a new python project
+8.on pycharm go to file, settings, python interpreter click the + sign, 
+type the following packages and install them one after the other
+kivy
+kivy.deps.angle
+kivy.deps.gstreamer
+Pillow
+cython
